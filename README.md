@@ -24,7 +24,18 @@ A compiled version `webserver-1.0-SNAPSHOT.jar` can be found in the root directo
 
 `FileServingApp` - an application that serves static files from it's document root.
 
+## Run the server using IDE
+Import the project in your IDE, go to run configurations and set the required program arguments.
+<port> <threads> <document root>
+e.g. 8020 10 C:/Users/mohammad.raza/Pictures/
+
+Succesfull start will print following on console.
+me.homework.server.workers.ExecutorMonitor - [7/10] Active: 0, Completed: 0, Task: 0, queueSize: 0
+
+Now open the browser and browse the http://localhost:8020/ and append any file name with extenstion, which is available in your directory. e.g. http://localhost:8020/payload.txt
+
 ## Installation
 `gradle build`
 ## Usage
 `java -jar webserver-<version> <port> <threads> <document root>`
+e.g java -jar webserver-1.0-SANPSHOT 8020 10 C:/Users/mohammad.raza/Pictures/
