@@ -24,7 +24,7 @@ A compiled version `webserver-1.0-SNAPSHOT.jar` can be found in the root directo
 
 `FileServingApp` - an application that serves static files from it's document root.
 
-## Run the server using IDE
+## Run the server using IDE / Usage
 Import the project in your IDE as general Java project.
 
 After successful import, set the following properties in "server.properties" file. properties file located at webserver >> src >> resources >> server.properties
@@ -44,6 +44,7 @@ Now open the browser and browse the http://localhost:8020/ and append any file n
 
 ## Installation
 `gradle build`
-## Usage
+
+## 
 `java -jar webserver-<version> <port> <threads> <document root>`
 e.g java -jar webserver-1.0-SANPSHOT 8020 10 C:/Users/mohammad.raza/Pictures/
